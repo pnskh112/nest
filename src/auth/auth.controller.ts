@@ -17,4 +17,5 @@ export class AuthController {
     signIn(@Body(ValidationPipe) authCredentialsDto: AuthCredentialsDto) {
         return this.authService.signIn(authCredentialsDto);
     }
+
 }
